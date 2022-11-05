@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    height: 100%;
+    background:url('./images/mailbox.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
 }
+.card{
+    background-color:rgb(223, 247, 3);
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    shape-outside: none;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    display: felx;
+    align-items: center;
+    height: 580px;
+    font-family: 'Playfair Display', serif;
 }
-
-.App-link {
-  color: #61dafb;
+.button span{
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
 }
+.button:hover{
+    background-color:gold
+}
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 210px;
+    opacity: 1;
+    border: 1px solid burlywood;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+@media only screen and (max-width:600px){
+    .card {
+        width: 80%;
+        height: 30%;
+    }
 }
