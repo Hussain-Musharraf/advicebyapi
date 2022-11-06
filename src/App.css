@@ -6,17 +6,19 @@
 }
 .app{
     height:100%;
-    /* background:url('./images/mailbox.jpg'); */
+    background:url('./images/mailbox.jpg');
     background-color:aquamarine;
-    background-size:auto;
+    background-size:cover;
     background-position: center;
     display: flex;
     justify-content:center;
     align-items: center;
     text-align: center;
+    overflow-wrap: normal;
+
 }
 .card{
-    background-color:rgb(223, 247, 3);
+    background-color:rgb(237, 239, 220);
     width: 60%;
     height:50%;
     display: flex;
@@ -25,10 +27,11 @@
     flex-direction: column;
     border-radius: 25px;
     padding: 2%;
-    box-shadow: 10px 10px;
-    shape-outside: none;
+    /* box-shadow: 10px 10px; */
+    border: 10px solid gold;
 }
 .heading{
+    height: max-content;
     display: felx;
     align-items: center;
     height: 580px;
