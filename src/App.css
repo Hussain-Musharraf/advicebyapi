@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .app{
-    height: 100%;
+    height:max-content;
     background:url('./images/mailbox.jpg');
     background-size: cover;
     background-position: center;
