@@ -6,8 +6,9 @@
 }
 .app{
     height:100%;
-    background:url('./images/mailbox.jpg');
-    background-size: cover;
+    /* background:url('./images/mailbox.jpg'); */
+    background-color:aquamarine;
+    background-size:auto;
     background-position: center;
     display: flex;
     justify-content:center;
@@ -26,7 +27,6 @@
     padding: 2%;
     box-shadow: 10px 10px;
     shape-outside: none;
-    overflow-y: auto;
 }
 .heading{
     display: felx;
